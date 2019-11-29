@@ -10,4 +10,4 @@ arguments = parser.parse_args()
 sess = gpt2.start_tf_sess()
 gpt2.load_gpt2(sess)
 
-gpt2.generate(sess,prefix=arguments.prefix,truncate=arguments.truncate,length=666)
+gpt2.generate(sess,prefix=arguments.prefix,truncate=arguments.truncate,length=1024)
